@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <!-- formularios -->
+    <!-- metodo get -->
+    <h1>Mi formulario</h1>
+    <form action="/send" method="get" name="MiFormulario" target="_blank" autocomplete="off">
+        <!-- envia datos  -->
+        <span>usernema:</span>
+        <input type="text" name="usernema">
+        <span>Edad:</span>
+        <input type="number" name="Edad">
+        <input type="submit">
+    </form>
+    <!-- metodo post, no aparece los datos por seguridad ya que no va expuesta-->
+    <h1>Mi formulario</h1>
+    <form action="/send" method="post" name="MiFormulario" target="_blank" autocomplete="off">
+        <!-- envia datos  -->
+        <span>usernema:</span>
+        <input type="text" name="usernema">
+        <span>Edad:</span>
+        <input type="number" name="Edad">
+        <input type="submit">
+
+    </form>
+    <br><br>
+
+    <!-- Etiqueta label -->
+    <!-- Estructura básica del formulario: Comienza creando la estructura básica del formulario utilizando las etiquetas <form>, <input>, <label>, etc.
+
+    Asocia etiquetas con campos de entrada: Cada campo de entrada debe estar asociado con una etiqueta utilizando el atributo for en la etiqueta <label> y el atributo id en el campo de entrada correspondiente. De esta manera, cuando haces clic en la etiqueta, el cursor se coloca automáticamente en el campo de entrada.
+
+    Alinea y organiza las etiquetas y los campos de entrada: Puedes usar CSS para alinear y organizar las etiquetas y los campos de entrada de acuerdo a tu diseño preferido. -->
+
+    <form action="procesar_formulario.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre">
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email">
+
+        <label for="mensaje">Mensaje:</label>
+        <textarea id="mensaje" name="mensaje" rows="4"></textarea>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+    <br><br>
+
+    <form>
+        <fieldset>
+            <legend>Tamaño del zumo de fruta</legend>
+            <p>
+                <input type="radio" name="size" id="size_1" value="small" />
+                <label for="size_1">Pequeño</label>
+            </p>
+            <p>
+                <input type="radio" name="size" id="size_2" value="medium" />
+                <label for="size_2">Mediano</label>
+            </p>
+            <p>
+                <input type="radio" name="size" id="size_3" value="large" />
+                <label for="size_3">Grande</label>
+            </p>
+        </fieldset>
+    </form>
+    <br>
+    <label for="name">
+        Nombre: <input type="text" id="name" name="user_name" />
+    </label>
+
+    <br>
+    <p>Los campos obligatorios se marcan con un <abbr title="required">*</abbr>.</p>
+
+    <!-- Así que esto: -->
+    <div>
+        <label for="username">Nombre:</label>
+        <input type="text" name="username" />
+        <label for="username"><abbr title="required" aria-label="required">*</abbr></label>
+    </div>
+
+    <!-- sería mejor hacerlo así: -->
+    <div>
+        <label for="username">
+            <span>Nombre:</span>
+            <input id="username" type="text" name="username" />
+            <abbr title="required" aria-label="required">*</abbr>
+        </label>
+    </div>
+
+    <!-- Pero probablemente lo mejor es esto: -->
+    <div>
+        <label for="username">Nombre: <abbr title="required" aria-label="required">*</abbr></label>
+        <input id="username" type="text" name="username" />
+    </div>
+    <br><br>
+    <!-- Limitantes en Html-->
+    <!-- maxlength: Este atributo limita el número máximo de caracteres que se pueden ingresar en un campo de texto.
+
+    minlength: Especifica el número mínimo de caracteres que un campo de texto debe contener.
+
+    min y max: Estos atributos se utilizan en campos numéricos (type="number", type="range", etc.) para especificar el valor mínimo y máximo que se puede ingresar.
+
+    pattern: Este atributo te permite especificar una expresión regular que debe coincidir con el valor ingresado por el usuario. Puedes usar esto para imponer restricciones de formato, como un formato específico de número de teléfono o dirección de correo electrónico.
+
+    required: Este atributo hace que un campo sea obligatorio de llenar antes de que el formulario pueda ser enviado. -->
+
+    <form action="procesar_formulario.php" method="post">
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" maxlength="5" required>
+
+        <label for="nombre">Nombre:</label>
+        <input type="text" id="nombre" name="nombre" minlength="5" required>
+
+        <label for="edad">Edad:</label>
+        <input type="number" id="edad" name="edad" min="18" max="100" required>
+
+        <label for="telefono">Teléfono:</label>
+        <input type="text" id="telefono" name="telefono" pattern="[0-9]{10}" placeholder="Ejemplo: 12345678 90" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required>
+
+        <input type="submit" value="Enviar">
+    </form>
+    <br><br>
+    <!-- minlength: Este atributo especifica el número mínimo de caracteres que un campo de texto debe contener.
+
+    step: En campos numéricos (type="number", type="range", etc.), este atributo especifica el tamaño del paso entre los valores permitidos. Por ejemplo, step="0.5" permitiría valores como 1, 1.5, 2, etc.
+
+    pattern (expresión regular): Además de ser usado para validar formatos específicos, como números de teléfono o direcciones de correo electrónico, también puedes usar expresiones regulares para validar otros tipos de datos, como códigos postales, formatos de fecha, etc.
+
+    autocomplete: Este atributo especifica si el navegador debe o no recordar y autocompletar valores anteriores ingresados en un campo. Puedes utilizarlo para controlar si deseas que el navegador autocomplete automáticamente los campos.
+
+    list y datalist: Estos atributos te permiten asociar un campo de entrada con una lista de opciones predefinidas, lo que puede ayudar a limitar las opciones que un usuario puede seleccionar.
+
+    Validación personalizada con JavaScript: Además de los métodos mencionados anteriormente, también puedes realizar validaciones más complejas y personalizadas utilizando JavaScript. Puedes usar eventos como onblur, onchange, o el evento submit del formulario para ejecutar funciones de validación personalizadas.
+
+-->
+    <form action="procesar_formulario.php" method="post">
+        <label for="codigo_postal">Código Postal:</label>
+        <input type="text" id="codigo_postal" name="codigo_postal" pattern="[0-9]{5}" placeholder="Ejemplo: 12345"
+            required>
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+        <label for="numero_tarjeta">Número de Tarjeta de Crédito:</label>
+        <input type="text" id="numero_tarjeta" name="numero_tarjeta" pattern="[0-9]{16}"
+            placeholder="Ejemplo: 1234567890123456" required>
+
+        <label for="fruta">Fruta Favorita:</label>
+        <input type="text" id="fruta" name="fruta" list="lista_frutas" autocomplete="off">
+        <datalist id="lista_frutas">
+            <option value="Manzana">
+            <option value="Banana">
+            <option value="Uva">
+            <option value="Fresa">
+        </datalist>
+
+        <input type="submit" value="Enviar">
+    </form>
+
+</body>
+
+</html>
