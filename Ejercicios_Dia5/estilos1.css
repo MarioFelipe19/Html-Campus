@@ -1,0 +1,38 @@
+:root{
+    --background-color: yellow;
+}
+main section p strong{
+    background: var(--background-color);
+}
+body{
+    color: blue;
+    background-color: beige;
+}
+h1{
+    color: black;
+}
+h2{
+    color: tomato;
+}
+.hobbies h2{
+    color: yellow;
+}
+section+section h2 {
+    color: black;
+}
+#presentacion p{
+    background-color: red;
+}
+a{
+    color: green;
+}
+header img{
+    border: 2px solid purple;
+}
+footer p{
+    color: grey;
+}
+#x{
+    color: aqua;
+    border: 3px solid ;
+}
