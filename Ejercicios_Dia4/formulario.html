@@ -18,7 +18,7 @@
             <form action="/send/" method="get" name="Formulario" target="_blank" autocomplete="off">
                 Los campos obligatorios se marcan con un <abbr title="required">*</abbr>.</p>
                 <label for="nombre">Nombre Completo</label>
-                <input type="text" id="nombre" name="nombre" minlength="10" maxlength="30" required
+                <input type="text" id="nombre" name="nombre" autocomplete="on" minlength="10" maxlength="30" required
                     placeholder="Juan Carlos Mendez Pachon"><abbr title="required" aria-label="required">*</abbr>
                 <br><br>
                 <!-- Email -->
@@ -28,13 +28,12 @@
                 <br><br>
                 <!-- Contraseña -->
                 <label for="password">Contraseña:</label>
-                <input type="password" id="password" name="password" minlength="8" required step="1" pattern="[0-9]"
+                <input type="password" id="password" name="password" minlength="8" required step="1" 
                     required><abbr title="required" aria-label="required">*</abbr>
                 <br><br>
                 <!-- confimar contraseña -->
                 <label for="passwordconfirmar">confirmar Contraseña:</label>
-                <input type="password" id="passwordconfirmar" name="passwordconfirmar" minlength="8" step="1"
-                    pattern="[0-9]" required><abbr title="required" aria-label="required">*</abbr>
+                <input type="password" id="passwordconfirmar" name="passwordconfirmar" minlength="8" step="1" required><abbr title="required" aria-label="required">*</abbr>
                 <br><br>
                 <!-- Fecha de nacimiento -->
                 <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
@@ -55,16 +54,17 @@
                 <!-- Intereses -->
                 <h3>Ingrse los intereses <abbr title="required" aria-label="required">*</abbr></h3>
                 <label for="intereses_Tecnología">Tecnología</label>
-                <input type="checkbox" id="intereses_Tecnología" name="intereses" value="Tecnología" required>
+
+                <input type="checkbox" id="intereses_Tecnología" name="intereses" value="Tecnología">
                 <br>
                 <label for="intereses_Deportes">Deportes</label>
-                <input type="checkbox" id="intereses_Deportes" name="intereses" value="Deportes" required>
+                <input type="checkbox" id="intereses_Deportes" name="intereses" value="Deportes">
                 <br>
                 <label for="intereses_Música">Música</label>
                 <input type="checkbox" id="intereses_Música" name="intereses" value="Música" required>
                 <br>
                 <label for="intereses_Viajes">Viajes</label>
-                <input type="checkbox" id="intereses_Viajes" name="intereses" value="Viajes" required>
+                <input type="checkbox" id="intereses_Viajes" name="intereses" value="Viajes">
                 <br><br>
                 <!-- Pais -->
                 <h3>Seleccione el pais <abbr title="required" aria-label="required">*</abbr></h3>
@@ -76,6 +76,15 @@
                     <option value="Panama">Panama</option>
                     <option value="Chile">Chile</option>
                 </select>
+                <br><br>
+                <!-- cuadro de texto -->
+                <label for="comentarios">Comentarios:</label><abbr title="required" aria-label="required">*</abbr>
+                <br><br>
+                <textarea id="comentarios" name="comentarios" rows="5" cols="50"
+                    placeholder="Escribe tus comentarios aquí..." minlength="10" maxlength="500" required></textarea>
+                <br>
+                <br>
+                <input type="submit" value="Enviar">
 
 
 
