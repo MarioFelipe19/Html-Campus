@@ -1,0 +1,17 @@
+/* esta es una varible creada por mi */
+:root{
+    --background-color: black ;
+}
+/* aqui llamo la vriable */
+h1{
+    background: var(--background-color);
+}
+#titulo {
+    color: gold;
+}
+.titulo{
+    color: aqua;
+}
+h1{
+    color: green;
+}

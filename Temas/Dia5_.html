@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ejemplo css</title>
+    <!-- no se ejecuta porque el link esta despues -->
+    <style>
+        h1{
+            color: blue;
+        }
+    </style>
+    <!-- este trae los estilos desde un archivo css -->
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Este es un titulo h1</h1>
+    <!-- este css es mas especifico. -->
+    <h1 style="color: red;">Este es un titulo h1</h1>
+    <!-- se colorea por el id que se pone en el archivo css -->
+    <h1 id="titulo">titulo</h1>
+    <!-- este se usa para grupos grades de elementos -->
+    <h1 class="titulo">titulo2</h1>
+</body>
+</html>
