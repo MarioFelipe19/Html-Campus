@@ -1,0 +1,29 @@
+:root{
+    --background-color: yellow;
+}
+main section strong{
+    background: var(--background-color);
+}
+header{
+    background-image: url(./imagenes/motañas.jpg);
+    color: white;
+    background-repeat: repeat;
+    background-attachment: fixed;
+    border: solid;
+    text-align: center;
+}
+body{
+    background-image: radial-gradient(ellipse, rgb(103, 214, 218), rgb(74, 238, 74));
+}
+img {
+    opacity: 65%;
+    border: solid aqua;
+    text-align: center;
+}
+section h2 {
+    color: rgb(20, 17, 216);
+    text-align: center;
+}
+article h3{
+    color: blue;
+}
