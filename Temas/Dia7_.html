@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        a {
+            color: green;
+        }
+
+        a[href] {
+            color: red;
+        }
+        /* combiandor descendiente */
+        a[href="sobremi.html"] {
+            color: blue;
+        }
+        /*  */
+        div#main-container div{
+            color: blue;
+        }
+        /*  */
+        div#main-container span{
+            color: red;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- selectores -->
+    <a>Perfil</a>
+    <a href="settigns.html">Configuaracion</a>
+    <a href="sobremi.html">sobremi</a>
+
+    <div id="main-container">
+        <div id="section">
+            <h1>Seccion1</h1>
+        </div>
+        <div id="section">
+            <h1>Seccion1</h1>
+        </div>
+        <div id="section">
+            <h1>Seccion1</h1>
+        </div>
+        <span>
+            <h1>hola</h1>
+        </span>
+        <span>
+            <h1>hola</h1>
+        </span>
+        <div id="section">
+            <h1>Seccion1</h1>
+        <span>
+            <h1>hola</h1>
+        </span>
+    </div>
+</body>
+
+</html>
