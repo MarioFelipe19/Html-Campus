@@ -1,6 +1,4 @@
-body{
-    background-image: radial-gradient( white,rgb(209, 182, 64));
-}
+    
 header{
     background-color: rgb(255, 255, 255);
 }
@@ -8,7 +6,7 @@ header h1{
     text-align: center;
 }
 #img1{
-    text-align: left;
+    text-align: center;
     
 }
 img{
@@ -18,9 +16,10 @@ img{
     margin: 0 0 0 0;
 }
 header nav a{
-    padding: 3%;
-    margin: 1.5%;
-    border-radius: 20%;
-    background-color: rgb(95, 168, 173);
+    padding: 1%;
+    margin: 1%;
+    border-radius: 10%;
+    background-color: rgb(44, 219, 73);
+    text-decoration: none;
     
 }
