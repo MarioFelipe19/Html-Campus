@@ -1,0 +1,54 @@
+body{
+    border-color: black;
+    border-width: 10px;
+    border-style: double;
+    border-radius: 25px;
+    width: 400px;
+}
+header div h1{
+    border-color: red;
+    border-width: 5px;
+    border-style: double;
+    text-align: center;
+    border-radius: 25px;
+}
+header div{
+    width: 300px;
+    padding: 0px 0px 0px 50px;
+}
+h2{
+    text-align: center;
+}
+main section div p{
+    border-color: red;
+    border-width: 5px;
+    border-style: double;
+    border-radius: 25px;
+    margin: 30px;
+    padding: 20px 0px 20px 30px;
+}
+main section div{
+    width: 350px;
+    padding: 0px 0px 0px 30px;
+}
+main section div ul {
+    border-color: red;
+    border-width: 5px;
+    border-style: double;
+    border-radius: 25px;
+    width: 170px;
+    padding: 10px 0px 10px 30px;
+}
+main section + section div{
+    padding: 0px 0px 20px 100px;
+}
+main div img{
+    width: 80px;
+    border-color: red;
+    border-width: 5px;
+    border-style: double;
+    border-radius: 25px;
+}
+main section + section + section div{
+    padding: 0px 0px 20px 160px;
+}
