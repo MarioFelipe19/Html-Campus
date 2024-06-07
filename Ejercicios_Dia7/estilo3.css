@@ -1,25 +1,55 @@
     
+body{
+    display: flex;
+    flex-direction: column;
+    background-image: url(https://c.wallhere.com/photos/af/38/1920x1080_px_books_Interior_Design_Interiors_Knowledge_library_Shelves-1302735.jpg!d);
+    background-size: 100vw ;
+    background-repeat: no-repeat;
+}
 header{
-    background-color: rgb(255, 255, 255);
-}
-header h1{
-    text-align: center;
-}
-#img1{
-    text-align: center;
+    background-color: rgb(84, 171, 221);
+    display: flex;
+    justify-content: space-around;
     
 }
-img{
+header h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    order: 2;
+    font-size: 6vw;
+}
+header div{
+    padding:  0.5vw 0vw 0vw;
+}
+header div img{
     border-radius: 60%;
     border: solid ;
-    width: 20%;
-    margin: 0 0 0 0;
+    width: 20vw;
+    order: 1;
 }
-header nav a{
+nav{
+    background-color: rgb(84, 171, 221);
+    display: inline-flex;
+    justify-content: center;
+    gap: 6vw;
+    position: relative;
+    top: 1vw;
+    border-radius: 25px;
+    padding: 0.5vw 0vw 0.5vw;
+    margin: 0vw 3vw 0vw;
+    
+}
+nav a{
     padding: 1%;
-    margin: 1%;
     border-radius: 10%;
     background-color: rgb(44, 219, 73);
     text-decoration: none;
+    color: black;
 }
+nav a:hover{
+    background-color: aqua
+}
+main{
+    display: flex;
+}
+
 
