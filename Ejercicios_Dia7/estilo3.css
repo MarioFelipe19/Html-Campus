@@ -3,6 +3,7 @@ body{
     display: flex;
     flex-direction: column;
     background-image: url(https://c.wallhere.com/photos/af/38/1920x1080_px_books_Interior_Design_Interiors_Knowledge_library_Shelves-1302735.jpg!d);
+    background-color: black;
     background-size: 100vw ;
     background-repeat: no-repeat;
 }
@@ -10,12 +11,17 @@ header{
     background-color: rgb(84, 171, 221);
     display: flex;
     justify-content: space-around;
+    border-radius: 25px;
+    margin: 0vw 2vw 0vw;
+    opacity: 90%;
     
 }
 header h1{
-    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-family:'Times New Roman', Times, serif;
     order: 2;
-    font-size: 6vw;
+    font-size: 3vw;
+    position: relative;
+    right: 18vw;
 }
 header div{
     padding:  0.5vw 0vw 0vw;
@@ -23,8 +29,10 @@ header div{
 header div img{
     border-radius: 60%;
     border: solid ;
-    width: 20vw;
+    width: 6vw;
     order: 1;
+    position: relative;
+    right: 13vw;
 }
 nav{
     background-color: rgb(84, 171, 221);
@@ -35,7 +43,8 @@ nav{
     top: 1vw;
     border-radius: 25px;
     padding: 0.5vw 0vw 0.5vw;
-    margin: 0vw 3vw 0vw;
+    margin: 0vw 4vw 0vw;
+    opacity: 90%;
     
 }
 nav a{
@@ -48,8 +57,65 @@ nav a{
 nav a:hover{
     background-color: aqua
 }
-main{
-    display: flex;
+main {
+    display: inline-block   ;
 }
+main section {
+    justify-content: center;
+    position: relative;
+    top: 4vw;
+    color: white;
+    text-align: center;
+}
+main section div img{
+    width: 15vw;
+}
+:root{
+    --background-color: yellow;
+}
+main section h3{
+    color: black;
+    background: var(--background-color);
+    margin: 1vw 35vw 1vw;
+    border-radius: 25px;
+}
+main section p{
+    margin: 0vw 30vw 0vw ;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+main section a{
+    text-decoration: none;
+    color: black;
+    background-color: rgb(84, 171, 221);
+    padding: 1%;
+    border-radius: 10%;
+    position: relative;
+    top: 2vw;
+}
+main section a:hover{
+    background-color: red;
+    opacity: 60%;
+}
+section + section{
+    position: relative;
+    top: 10vw;
+    padding: 1vw 0vw 1vw;
+    background-color: red;
+    display: grid;
+    grid-template-areas: "img img img img"
+                        "img img img img";
+    column-gap: 1vw;
+    row-gap: 1vw;
+}
+section + section div img:hover{
+    opacity: 80%;
+}
+section + section  div img {
+    width: 15vw;
+}
+
+
+
+/* https://www.visme.co/es/portadas-de-libros/ */
 
 
