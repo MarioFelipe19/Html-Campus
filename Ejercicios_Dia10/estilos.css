@@ -4,6 +4,8 @@ html{
     background-size: 100vw ;
     background-attachment: fixed;
 }
+/* MOVIL */
+/* --------------------------------------------------- */
 @media (max-width: 425px){
     body{
         display: grid;
@@ -11,11 +13,15 @@ html{
         grid-template-rows: repeat(1, 1fr) ;
         grid-gap: 4vw;
     }
+    /* HEADER */
+    /* --------------------------------------------------- */
     header h1{
         font-size: 2.5em;
         color: white;
         text-align: center;
     }
+    /* NAV */
+    /* --------------------------------------------------- */
     nav{
         display: flex;
         flex-direction: column;
@@ -33,6 +39,8 @@ html{
     nav a:hover{
         opacity: 90%;
     }
+    /* MAIN */
+    /* --------------------------------------------------- */
     main{
         background-color: gray;
         display: grid;
@@ -78,6 +86,7 @@ html{
         display: flex;
         flex-direction: column;
         text-align: center;
+        gap: 4vw;
     }
     article div img{
         width: 50vw;
@@ -93,6 +102,8 @@ html{
         text-align: left;
         align-items: start;
     }
+    /* FOOTER */
+    /* --------------------------------------------------- */
     footer{
         display: grid;
         background-color: blueviolet;
@@ -135,12 +146,147 @@ html{
         font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 }
+/* TABLET */
+/* --------------------------------------------------- */
 @media (min-width: 426px) and (max-width: 768px){
     body{
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr) ;
         grid-gap: 4vw;
+    }
+    /* HEADER */
+    /* --------------------------------------------------- */
+    header h1{
+        font-size: 2.5em;
+        color: white;
+        text-align: center;
+    }
+    /* NAV */
+    /* --------------------------------------------------- */
+    nav{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 2vw;
+        padding: 0vw 20vw 0vw ;
+    }
+    nav a{
+        
+        text-decoration: none;
+        background-color: rgb(28, 107, 81);
+        border-radius: 25px;
+        color: white;
+        font-size: 1.8em;
+    }
+    nav a:hover{
+        opacity: 90%;
+    }
+    /* MAIN */
+    /* --------------------------------------------------- */
+    main{
+        background-color: gray;
+        display: grid;
+        grid-template-areas: "section"
+                                "section section";
+        row-gap: 4vw;
+        opacity: 90%;
+        border-radius: 25px;
+    }
+    section{
+        border: solid 2px gold;
+        border-radius: 25px;
+    }
+    section h2{
+        color: black;
+        font-size: 1.8em;
+        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+    }
+    section + section{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+    section + section{
+        color: white;
+    }
+    section + section em{
+        color: black;
+    }
+    section + section a{
+        text-decoration: none;
+        color: gold;
+    }
+    section + section img{
+        width: 30vw;
+        border-radius: 10px;
+    }
+    section + section + section h6{
+        color: black;
+        font-size: 1em;
+    }
+    article{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 4vw;
+    }
+    article div img{
+        width: 50vw;
+        border-radius: 10px;
+    }
+    article section h6{
+        color: black;
+        font-size: 1em;
+    }
+    article section ul{
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: start;
+    }
+    /* FOOTER */
+    /* --------------------------------------------------- */
+    footer{
+        display: grid;
+        background-color: blueviolet;
+        grid-template-columns: auto;
+        grid-template-rows: auto;
+        grid-gap: 4vw;
+    }
+    footer section{
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: none;
+    }
+    footer section div img{
+        width: 50vw;
+    }
+    footer section + section{
+        gap: 3vw;
+    }
+    footer section + section + section div img{
+        width: 25vw;
+    }
+    footer section + section +section + section{
+        gap: 3vw;
+    }
+    footer section + section +section + section + section{
+        gap: 3vw;
+    }
+    footer section + section + section + section + section + section + section +section{
+        border-radius: 0px;
+        background-color: black;
+        padding: 0vw 0vw 5vw;
+    }
+    footer section + section + section + section + section + section + section hr{
+        width: 50vw;
+    }
+    footer section + section + section + section + section + section + section a{
+        text-decoration: none;
+        color: yellow;
+        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 }
 
