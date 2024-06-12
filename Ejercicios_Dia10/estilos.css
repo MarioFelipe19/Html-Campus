@@ -1,47 +1,53 @@
-html{
+html {
     background-image: url(https://www.gratistodo.com/wp-content/uploads/2022/04/animales-fantasticos-3-fondos.jpg);
     background-color: black;
-    background-size: 100vw ;
+    background-size: 100vw;
     background-attachment: fixed;
 }
+
 /* MOVIL */
 /* --------------------------------------------------- */
-@media (max-width: 425px){
-    body{
+@media (max-width: 425px) {
+    body {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr) ;
+        grid-template-rows: repeat(1, 1fr);
         grid-gap: 4vw;
     }
+
     /* HEADER */
     /* --------------------------------------------------- */
-    header h1{
+    header h1 {
         font-size: 2.5em;
         color: white;
         text-align: center;
     }
+
     /* NAV */
     /* --------------------------------------------------- */
-    nav{
+    nav {
         display: flex;
         flex-direction: column;
         text-align: center;
         gap: 2vw;
     }
-    nav a{
-        
+
+    nav a {
+
         text-decoration: none;
         background-color: rgb(28, 107, 81);
         border-radius: 25px;
         color: white;
         font-size: 1.8em;
     }
-    nav a:hover{
+
+    nav a:hover {
         opacity: 90%;
     }
+
     /* MAIN */
     /* --------------------------------------------------- */
-    main{
+    main {
         background-color: gray;
         display: grid;
         grid-template-columns: auto;
@@ -50,245 +56,535 @@ html{
         opacity: 90%;
         border-radius: 25px;
     }
-    section{
+
+    section {
         border: solid 2px gold;
         border-radius: 25px;
     }
-    section h2{
+
+    section h2 {
         color: black;
         font-size: 1.8em;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-    section + section{
+
+    section+section {
         display: flex;
         flex-direction: column;
         text-align: center;
     }
-    section + section{
+
+    section+section {
         color: white;
     }
-    section + section em{
+
+    section+section em {
         color: black;
     }
-    section + section a{
+
+    section+section a {
         text-decoration: none;
         color: gold;
     }
-    section + section img{
+
+    section+section img {
         width: 30vw;
         border-radius: 10px;
     }
-    section + section + section h6{
+
+    section+section+section h6 {
         color: black;
         font-size: 1em;
     }
-    article{
+
+    article {
         display: flex;
         flex-direction: column;
         text-align: center;
         gap: 4vw;
     }
-    article div img{
+
+    article div img {
         width: 50vw;
         border-radius: 10px;
     }
-    article section h6{
+
+    article section h6 {
         color: black;
         font-size: 1em;
     }
-    article section ul{
+
+    article section ul {
         display: flex;
         flex-direction: column;
         text-align: left;
         align-items: start;
     }
+
     /* FOOTER */
     /* --------------------------------------------------- */
-    footer{
+    footer {
         display: grid;
         background-color: blueviolet;
         grid-template-columns: auto;
         grid-template-rows: auto;
         grid-gap: 4vw;
     }
-    footer section{
+
+    footer section {
         display: flex;
         flex-direction: column;
         text-align: center;
         border: none;
     }
-    footer section div img{
+
+    footer section div img {
         width: 50vw;
     }
-    footer section + section{
+
+    footer section+section {
         gap: 3vw;
     }
-    footer section + section + section div img{
+
+    footer section+section+section div img {
         width: 25vw;
     }
-    footer section + section +section + section{
+
+    footer section+section+section+section {
         gap: 3vw;
     }
-    footer section + section +section + section + section{
+
+    footer section+section+section+section+section {
         gap: 3vw;
     }
-    footer section + section + section + section + section + section + section +section{
+
+    footer section+section+section+section+section+section+section+section {
         border-radius: 0px;
         background-color: black;
         padding: 0vw 0vw 5vw;
     }
-    footer section + section + section + section + section + section + section hr{
+
+    footer section+section+section+section+section+section+section hr {
         width: 50vw;
     }
-    footer section + section + section + section + section + section + section a{
+
+    footer section+section+section+section+section+section+section a {
         text-decoration: none;
         color: yellow;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 }
+
 /* TABLET */
 /* --------------------------------------------------- */
-@media (min-width: 426px) and (max-width: 768px){
-    body{
+@media (min-width: 426px) and (max-width: 768px) {
+    body {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
-        grid-template-rows: repeat(1, 1fr) ;
+        grid-template-rows: repeat(1, 1fr);
         grid-gap: 4vw;
     }
+
     /* HEADER */
     /* --------------------------------------------------- */
-    header h1{
+    header h1 {
         font-size: 2.5em;
         color: white;
         text-align: center;
     }
+
     /* NAV */
     /* --------------------------------------------------- */
-    nav{
+    nav {
         display: flex;
         flex-direction: column;
         text-align: center;
         gap: 2vw;
-        padding: 0vw 20vw 0vw ;
+        padding: 0vw 20vw 0vw;
     }
-    nav a{
-        
+
+    nav a {
+
         text-decoration: none;
         background-color: rgb(28, 107, 81);
         border-radius: 25px;
         color: white;
         font-size: 1.8em;
     }
-    nav a:hover{
+
+    nav a:hover {
         opacity: 90%;
     }
+
     /* MAIN */
     /* --------------------------------------------------- */
-    main{
+    main {
         background-color: gray;
         display: grid;
-        grid-template-areas: "section"
-                                "section section";
+        grid-template-areas: "section1 section1"
+            "section2 section3"
+            "section4 section4"
+            "article1 article1";
         row-gap: 4vw;
         opacity: 90%;
         border-radius: 25px;
+        column-gap: 4vw;
     }
-    section{
+
+    section {
         border: solid 2px gold;
         border-radius: 25px;
+        grid-area: section1;
     }
-    section h2{
+
+    section h2 {
         color: black;
         font-size: 1.8em;
-        font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif ;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     }
-    section + section{
+
+    section+section {
         display: flex;
         flex-direction: column;
         text-align: center;
+        grid-area: section2;
     }
-    section + section{
+
+    section+section {
         color: white;
     }
-    section + section em{
+
+    section+section em {
         color: black;
     }
-    section + section a{
+
+    section+section a {
         text-decoration: none;
         color: gold;
     }
-    section + section img{
+
+    section+section img {
         width: 30vw;
         border-radius: 10px;
     }
-    section + section + section h6{
+
+    section+section+section {
+        grid-area: section3;
+    }
+
+    section+section+section h6 {
         color: black;
         font-size: 1em;
     }
-    article{
+
+    section+section+section+section {
+        grid-area: section4;
+    }
+
+    article {
         display: flex;
         flex-direction: column;
         text-align: center;
         gap: 4vw;
+        grid-area: article1;
     }
-    article div img{
+
+    article div img {
         width: 50vw;
         border-radius: 10px;
     }
-    article section h6{
+
+    article section h6 {
         color: black;
         font-size: 1em;
     }
-    article section ul{
+
+    article section ul {
         display: flex;
         flex-direction: column;
         text-align: left;
         align-items: start;
     }
+
     /* FOOTER */
     /* --------------------------------------------------- */
-    footer{
+    footer {
         display: grid;
         background-color: blueviolet;
-        grid-template-columns: auto;
-        grid-template-rows: auto;
+        grid-template-areas: "section1 section1"
+            "section6 section2"
+            "section5 section4"
+            "section3 section7"
+            "section8 section8";
         grid-gap: 4vw;
     }
-    footer section{
+
+    footer section {
         display: flex;
         flex-direction: column;
         text-align: center;
         border: none;
+        grid-area: section1;
     }
-    footer section div img{
+
+    footer section div img {
         width: 50vw;
     }
-    footer section + section{
+
+    footer section+section {
         gap: 3vw;
+        grid-area: section2;
+        padding: 0 0 2vw;
     }
-    footer section + section + section div img{
-        width: 25vw;
+
+    footer section+section+section {
+        grid-area: section3;
     }
-    footer section + section +section + section{
+
+    footer section+section+section div img {
+        width: 15vw;
+    }
+
+    footer section+section+section+section {
         gap: 3vw;
+        grid-area: section4;
+        padding: 0 0 2vw;
     }
-    footer section + section +section + section + section{
+
+    footer section+section+section+section+section {
         gap: 3vw;
+        grid-area: section5;
     }
-    footer section + section + section + section + section + section + section +section{
+
+    footer section+section+section+section+section+section {
+        grid-area: section6;
+    }
+
+    footer section+section+section+section+section+section+section {
+        grid-area: section7;
+    }
+
+    footer section+section+section+section+section+section+section+section {
         border-radius: 0px;
         background-color: black;
         padding: 0vw 0vw 5vw;
+        grid-area: section8;
     }
-    footer section + section + section + section + section + section + section hr{
+
+    footer section+section+section+section+section+section+section hr {
         width: 50vw;
     }
-    footer section + section + section + section + section + section + section a{
+
+    footer section+section+section+section+section+section+section a {
         text-decoration: none;
         color: yellow;
-        font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
     }
 }
 
+/* LAPTOP */
+/* --------------------------------------------------- */
+@media (min-width: 769px) and (max-width: 2560px){
+    body {
+        display: grid;
+        grid-template-columns: repeat(1, 1fr);
+        grid-template-rows: repeat(1, 1fr);
+        grid-gap: 4vw;
+    }
 
+    /* HEADER */
+    /* --------------------------------------------------- */
+    header h1 {
+        font-size: 2.5em;
+        color: white;
+        text-align: center;
+    }
 
+    /* NAV */
+    /* --------------------------------------------------- */
+    nav {
+        display: flex;
+        justify-content: space-around;
+        align-items: baseline ;
+        gap: 2vw;
+        padding: 0vw 20vw 0vw;
+    }
+
+    nav a {
+
+        text-decoration: none;
+        background-color: rgb(28, 107, 81);
+        border-radius: 25px;
+        color: white;
+        font-size: 2em;
+    }
+
+    nav a:hover {
+        opacity: 90%;
+    }
+
+    /* MAIN */
+    /* --------------------------------------------------- */
+    main {
+        background-color: gray;
+        display: grid;
+        grid-template-areas: "section1 section1"
+            "section2 section3"
+            "section4 section4"
+            "article1 article1";
+        row-gap: 4vw;
+        opacity: 90%;
+        border-radius: 25px;
+        column-gap: 4vw;
+    }
+
+    section {
+        border: solid 2px gold;
+        border-radius: 25px;
+        grid-area: section1;
+    }
+
+    section h2 {
+        color: black;
+        font-size: 1.8em;
+        font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    }
+
+    section+section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        grid-area: section2;
+    }
+
+    section+section {
+        color: white;
+    }
+
+    section+section em {
+        color: black;
+    }
+
+    section+section a {
+        text-decoration: none;
+        color: gold;
+    }
+
+    section+section img {
+        width: 30vw;
+        border-radius: 10px;
+    }
+
+    section+section+section {
+        grid-area: section3;
+    }
+
+    section+section+section h6 {
+        color: black;
+        font-size: 1em;
+    }
+
+    section+section+section+section {
+        grid-area: section4;
+    }
+
+    article {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        gap: 4vw;
+        grid-area: article1;
+    }
+
+    article div img {
+        width: 50vw;
+        border-radius: 10px;
+    }
+
+    article section h6 {
+        color: black;
+        font-size: 1em;
+    }
+
+    article section ul {
+        display: flex;
+        flex-direction: column;
+        text-align: left;
+        align-items: start;
+    }
+
+    /* FOOTER */
+    /* --------------------------------------------------- */
+    footer {
+        display: grid;
+        background-color: blueviolet;
+        grid-template-areas: "section1 section1"
+            "section6 section2"
+            "section5 section4"
+            "section3 section7"
+            "section8 section8";
+        grid-gap: 4vw;
+    }
+
+    footer section {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        border: none;
+        grid-area: section1;
+    }
+
+    footer section div img {
+        width: 50vw;
+    }
+
+    footer section+section {
+        gap: 3vw;
+        grid-area: section2;
+        padding: 0 0 2vw;
+    }
+
+    footer section+section+section {
+        grid-area: section3;
+    }
+
+    footer section+section+section div img {
+        width: 15vw;
+    }
+
+    footer section+section+section+section {
+        gap: 3vw;
+        grid-area: section4;
+        padding: 0 0 2vw;
+    }
+
+    footer section+section+section+section+section {
+        gap: 3vw;
+        grid-area: section5;
+    }
+
+    footer section+section+section+section+section+section {
+        grid-area: section6;
+    }
+
+    footer section+section+section+section+section+section+section {
+        grid-area: section7;
+    }
+
+    footer section+section+section+section+section+section+section+section {
+        border-radius: 0px;
+        background-color: black;
+        padding: 0vw 0vw 5vw;
+        grid-area: section8;
+    }
+
+    footer section+section+section+section+section+section+section hr {
+        width: 50vw;
+    }
+
+    footer section+section+section+section+section+section+section a {
+        text-decoration: none;
+        color: yellow;
+        font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    }
+}
