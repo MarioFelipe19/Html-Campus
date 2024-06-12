@@ -252,6 +252,7 @@ html {
 
     section+section {
         color: white;
+        font-size: 1em;
     }
 
     section+section em {
@@ -384,12 +385,13 @@ html {
 
 /* LAPTOP */
 /* --------------------------------------------------- */
-@media (min-width: 769px) and (max-width: 2560px){
+@media (min-width: 768px) and (max-width: 2561px){
     body {
         display: grid;
         grid-template-columns: repeat(1, 1fr);
         grid-template-rows: repeat(1, 1fr);
         grid-gap: 4vw;
+        margin: 0 4vw 0;
     }
 
     /* HEADER */
@@ -403,11 +405,9 @@ html {
     /* NAV */
     /* --------------------------------------------------- */
     nav {
-        display: flex;
-        justify-content: space-around;
-        align-items: baseline ;
-        gap: 2vw;
-        padding: 0vw 20vw 0vw;
+        display: inline-flex;
+        justify-content: space-between;
+        padding: 0vw 10vw 0vw;
     }
 
     nav a {
@@ -417,6 +417,7 @@ html {
         border-radius: 25px;
         color: white;
         font-size: 2em;
+        padding: 1vw 1vw 1vw ;
     }
 
     nav a:hover {
@@ -432,33 +433,38 @@ html {
             "section2 section3"
             "section4 section4"
             "article1 article1";
-        row-gap: 4vw;
+        
         opacity: 90%;
         border-radius: 25px;
-        column-gap: 4vw;
+        row-gap: 1vw;
+        margin: 0 4vw 0;
     }
 
     section {
         border: solid 2px gold;
         border-radius: 25px;
         grid-area: section1;
+        margin: 2vw 4vw 0;
     }
 
     section h2 {
         color: black;
         font-size: 1.8em;
         font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+        padding:  0 0 0 3vw;
     }
 
     section+section {
-        display: flex;
-        flex-direction: column;
+        display: inline-block;
         text-align: center;
+        align-content: center;
+        padding: 0 1vw 0 ;
         grid-area: section2;
     }
 
     section+section {
         color: white;
+        font-size: 1.4em;
     }
 
     section+section em {
@@ -471,12 +477,13 @@ html {
     }
 
     section+section img {
-        width: 30vw;
+        width: 15vw;
         border-radius: 10px;
     }
 
     section+section+section {
         grid-area: section3;
+        padding: 0 1vw 2vw ;
     }
 
     section+section+section h6 {
@@ -492,13 +499,17 @@ html {
         display: flex;
         flex-direction: column;
         text-align: center;
-        gap: 4vw;
+        gap: 1vw;
         grid-area: article1;
+    }
+    article section{
+        margin: 2vw 5vw 2vw;
     }
 
     article div img {
-        width: 50vw;
+        width: 30vw;
         border-radius: 10px;
+        margin: 2vw 0 0;
     }
 
     article section h6 {
@@ -511,6 +522,10 @@ html {
         flex-direction: column;
         text-align: left;
         align-items: start;
+    }
+
+    article section + section{
+        margin: 0 30vw 2vw ;    
     }
 
     /* FOOTER */
@@ -535,7 +550,7 @@ html {
     }
 
     footer section div img {
-        width: 50vw;
+        width: 17vw;
     }
 
     footer section+section {
@@ -549,7 +564,7 @@ html {
     }
 
     footer section+section+section div img {
-        width: 15vw;
+        width: 7vw;
     }
 
     footer section+section+section+section {
@@ -576,6 +591,7 @@ html {
         background-color: black;
         padding: 0vw 0vw 5vw;
         grid-area: section8;
+        margin: 0vw ;
     }
 
     footer section+section+section+section+section+section+section hr {
