@@ -1,7 +1,7 @@
 # Html-Campus
 
 
-Este proyecto es un compilado de informacion sobre Html y su funcionalidad.
+Este proyecto es un compilado de informacion sobre Html y su funcionalidad.✨
 
 ## Tabla de Contenidos
 
@@ -13,7 +13,7 @@ Este proyecto es un compilado de informacion sobre Html y su funcionalidad.
 
 ## Introducción
 
-Con este repositorio busco dar una guía de quien quiera aprender de Html y mejorar su conocimiento si ya ha utilizado este lenguaje.
+Con este repositorio busco dar una guía de quien quiera aprender de Html y mejorar su conocimiento si ya ha utilizado este lenguaje.:art:
 
 ## Instalación
 
@@ -41,13 +41,13 @@ source env/bin/activate
 pip install -r requirements.txt
 ```
 ## Tecnologias Utilizadas
-HTML5: Para la estructura de las páginas web. CSS3: Para el diseño y la presentación visual.
+HTML5: Para la estructura de las páginas web. CSS3: Para el diseño y la presentación visual.🔨
 
 
 
 
 ## Contribuir
-Haga un fork del repositorio. Cree una nueva rama (git checkout -b feature-nueva-funcionalidad). Haga commit de sus cambios (git commit -m 'Añadir nueva funcionalidad'). Haga push a la rama (git push origin feature-nueva-funcionalidad). Abra una solicitud de pull en GitHub.
+Haga un fork del repositorio. Cree una nueva rama (git checkout -b feature-nueva-funcionalidad). Haga commit de sus cambios (git commit -m 'Añadir nueva funcionalidad'). Haga push a la rama (git push origin feature-nueva-funcionalidad). Abra una solicitud de pull en GitHub.🔧
 
  ## Contacto
 puede escribirme a mi correo personal felipeparra257@gmail.com
