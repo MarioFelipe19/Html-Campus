@@ -50,4 +50,4 @@ HTML5: Para la estructura de las páginas web. CSS3: Para el diseño y la presen
 Haga un fork del repositorio. Cree una nueva rama (git checkout -b feature-nueva-funcionalidad). Haga commit de sus cambios (git commit -m 'Añadir nueva funcionalidad'). Haga push a la rama (git push origin feature-nueva-funcionalidad). Abra una solicitud de pull en GitHub.🔧
 
  ## Contacto
-puede escribirme a mi correo personal felipeparra257@gmail.com
+puede escribirme a mi correo personal felipeparra257@gmail.com🌐
