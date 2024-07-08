@@ -13,7 +13,7 @@ Este proyecto es un compilado de informacion sobre Html y su funcionalidad.✨
 
 ## Introducción
 
-Con este repositorio busco dar una guía de quien quiera aprender de Html y mejorar su conocimiento si ya ha utilizado este lenguaje.:art:
+Con este repositorio busco dar una guía de quien quiera aprender de Html y mejorar su conocimiento si ya ha utilizado este lenguaje.🎨
 
 ## Instalación
 
